@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	// background-color: #000;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+.container {
+	margin: 25px 0;
+}
+.phoneNav {
+	display: flex;
+	// margin-top: 5vh;
+	justify-content: space-between;
+	font-size: 2rem;
+	margin: 0 6vw;
+	// width: 98vw;
+}
+.img{
+	display: flex;
+	flex-direction: column;
+}
+h1{
+	font-size: 2rem;
+	display: inline;
+	margin-left: 5px;
+}
+section{
+	margin-top: 15px;
+}
+.hero-img {
+	position: relative;
+	height: 50vh;
+	width: auto;
+	background-size: cover;
+	z-index: -2;
+}
+.jungle{
+	background-image: url('/dist/img/jungle-1807476_640.jpg');
+	
+}
+.hero-shadow {
+	position: absolute;
+	height: 50vh;
+	width: 100vw;
+	background-color: rgba($color: #000000, $alpha: 0.4);
+	z-index: -1;
+	
+}
+.hero-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	height: 50vh;
+	z-index: 1;
+	padding: 0 10px;
+	
+}
+.white-color{
+	color: #fff; 
+	
+	// font-size: 1.2rem;
+	
+}
+.hero-text-p{
+	font-size: 0.9rem;
+}
+.hero-text-h2{
+	margin-top: 5px;
+	font-size: 1.4rem;
+}
+
+.abous-us-title{
+	text-transform: uppercase;
+	text-align: center;
+	padding: 15px 0;
+}
+.section-about-us{
+	display: flex;
+	flex-direction: column;
+}
+.section-about-us-img{
+	background-image: url('/dist/img/waters-3095682_640.jpg');
+	height: 50vh;
+	width: 100vw;
+	background-size: cover;
+}
+.text-about-us{
+	padding: 15px;
+}
+.text-about-us-paragraph{
+	margin-top: 15px;
+}
+
+.adventure{
+	background: url('/dist/img/girl-5785590_640.jpg');
+	background-size: cover;
+}
+.adventure-text{
+	height: 50vh;
+	color: #fff;
+	display: flex;
+	justify-content: center;align-items: center;
+	
+	
+}
+.border{
+	border: 1px solid #fff;
+	width: 80vw;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.2rem;
+	
+}
