@@ -13,6 +13,12 @@
 </head>
 
 <body>
+    <div  class="menu">
+            <a class="menu-link" href='#home''>Home</a>
+            <a class="menu-link" href="#about-us">O nas</a>
+            <a class="menu-link" href="#offers">Oferta</a>
+            <a class="menu-link" href="#contact">Kontakt</a>
+    </div>
     <section class="container">
         <nav class="phoneNav">
             <div class="logo"><a href="#"><i class="fa-solid fa-tree"></i>
@@ -23,8 +29,8 @@
         </nav>
 
     </section>
-    <main>
-        <section class="img">
+    <main id="home">
+        <section  class="img">
             <div class="hero-img jungle">
                 <div class="hero-shadow"></div>
                 <div class="hero-text">
@@ -34,7 +40,7 @@
 
             </div>
         </section>
-        <section class="about-us">
+        <section id="about-us" class="about-us">
             <h2 class="abous-us-title">o nas</h2>
             <div class="section-about-us">
                 <div class="section-about-us-img"></div>
@@ -61,39 +67,41 @@
 
             </div>
         </section>
-        <section class="offer">
+        <section id="offers" class="offer">
             <h2 class="abous-us-title">oferta</h2>
             <p class="center">Wybierz jedną z naszych wspaniałych ofert!</p>
             <div class="cards-box">
                 <div class="card demo">
                     <h3 class="center fwnormal">Demo</h3>
-                    <p class="price center">$0</p>
-                    <p> <i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                    <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                    <p><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
-                    <p><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
-                    <p><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
-                    <button class="choose white">Wybierz</button>
+                    <p class="price center"><span class="bigger">$</span>0</p>
+                    <div class="options">
+                        <p> <i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                        <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                        <p><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+                        <p><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+                        <p><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+                    </div>
+                    <div class="divCenter"><button class="choose white">Wybierz</button></div>
                 </div>
                 <div class="card standard">
                     <h3 class="center fwnormal">Standard</h3>
-                    <p class="price center">$99</p>
+                    <p class="price center"><span class="bigger">$</span>99</p>
                     <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
                     <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
                     <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
                     <p><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
                     <p><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
-                    <button class="choose green">Wybierz</button>
+                    <div class="divCenter"><button class="choose green">Wybierz</button></div>
                 </div>
                 <div class="card premium">
                     <h3 class="center fwnormal">Premium</h3>
-                    <p class="price center">$299</p>
+                    <p class="price center"><span class="bigger">$</span>299</p>
                     <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
                     <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
                     <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
                     <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
                     <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                    <button class="choose white">Wybierz</button>
+                    <div class="divCenter"><button class="choose white">Wybierz</button></div>
                 </div>
             </div>
         </section>
@@ -123,6 +131,7 @@
             </ul>
         </div>
     </footer>
+    <script src="dist/js/main.min.js"></script>
 </body>
 
 </html>
