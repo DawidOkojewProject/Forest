@@ -26,15 +26,12 @@ const messageInput = document.getElementById('message');
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // Prosta walidacja: upewnij się, że pola nie są puste
+
     if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
         alert('Wypełnij wszystkie pola formularza.');
         return;
     }
 
-    // Jeśli wszystkie pola są wypełnione, możesz tutaj dodać logikę wysyłki formularza, np. za pomocą Fetch API lub Ajax.
-
-    // Po wysłaniu formularza możesz dodać kod do wyczyszczenia pól:
     nameInput.value = '';
     emailInput.value = '';
     messageInput.value = '';

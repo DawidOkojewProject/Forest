@@ -7,7 +7,7 @@
 }
 body {
 	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	position: relative;
 }
 .container {
@@ -71,7 +71,7 @@ h1 {
 	z-index: -2;
 }
 .jungle {
-	background-image: url('/dist/img/jungle-1807476_640.jpg');
+	background-image: url("/dist/img/jungle-1807476_640.jpg");
 }
 .hero-shadow {
 	height: 60vh;
@@ -108,7 +108,7 @@ h1 {
 		flex-direction: column;
 	}
 	.section-about-us-img {
-		background-image: url('/dist/img/waters-3095682_640.jpg');
+		background-image: url("/dist/img/waters-3095682_640.jpg");
 		height: 60vh;
 		width: 100vw;
 		background-size: cover;
@@ -116,7 +116,7 @@ h1 {
 	.text-about-us {
 		padding: 10px;
 
-		h3{
+		h3 {
 			font-size: 1.4rem;
 			padding: 10px 0;
 		}
@@ -132,7 +132,7 @@ h1 {
 }
 
 .adventure {
-	background: url('/dist/img/girl-5785590_640.jpg');
+	background: url("/dist/img/girl-5785590_640.jpg");
 	position: relative;
 	width: 100vw;
 
@@ -160,20 +160,20 @@ h1 {
 
 .offer {
 	padding: 20px 0px;
-	
-	.other-offers{
+
+	.other-offers {
 		padding: 10px 20px;
 	}
-	a{
+	a {
 		text-decoration: none;
 		font-weight: bold;
 		text-decoration: underline;
 		transition: transform 0.3s;
 	}
-	.other-offers-link{
+	.other-offers-link {
 		padding: 5px;
 	}
-	.other-offers-link:hover{
+	.other-offers-link:hover {
 		transform: scale(1.4);
 	}
 	.cards-box {
@@ -183,7 +183,7 @@ h1 {
 		font-size: 0.9rem;
 		.card {
 			transition: transform 0.3s;
-			
+
 			width: 300px;
 			height: 400px;
 			border-radius: 10px;
@@ -240,15 +240,14 @@ h1 {
 				}
 				.green:hover {
 					transform: scale(1.1);
-					background-color:#28f41a ;
+					background-color: #28f41a;
 				}
 			}
 		}
-		.card:hover{
+		.card:hover {
 			transform: scale(1.05);
 		}
 	}
-
 }
 
 .fa-solid {
@@ -264,7 +263,6 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	.footer_section {
-	
 		h3 {
 			text-align: center;
 			padding: 10px;
@@ -278,52 +276,109 @@ h1 {
 	}
 }
 footer {
-    // position: absolute;
-    bottom: 0;
-    width: 100%;
+	// position: absolute;
+	bottom: 0;
+	width: 100%;
 	padding: 15px 5px;
 }
 a {
 	text-decoration: none;
 	color: #000;
 }
-.contact{
+.contact {
 	padding: 5px 10px;
 	position: relative;
 }
 
 .contact-form {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 }
 
 .contact-form label {
-    display: block;
-    margin: 10px 0;
-    font-weight: bold;
+	display: block;
+	margin: 10px 0;
+	font-weight: bold;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 3px;
 }
 
 .contact-form button {
-    background-color: #31c65e;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 3px;
-    cursor: pointer;
+	background-color: #31c65e;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 3px;
+	cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #1ae50b;
+	background-color: #1ae50b;
+}
+
+.ourOffers {
+	padding: 10px 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h2 {
+		padding: 20px;
+		font-size: 2.6rem;
+		text-align: center;
+	}
+	.ourOffer {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		padding: 20px 0;
+		img {
+			width: 100%;
+		}
+		.tekst {
+		
+			h3 {
+				padding: 10px 0px;
+				font-size: 1.6rem;
+				text-align: center;
+			}
+			.chooseSection {
+				display: flex;
+				justify-content: center;
+		
+				flex-direction: column;
+				text-align: center;
+			
+				.choose {
+					border-radius: 5px;
+
+					padding: 15px 30px;
+					border: none;
+					box-shadow: 2px 2px 7px 1px rgb(163, 163, 163);
+					color: #726262;
+					margin: 10px;
+					
+				}
+				.white {
+					background-color: #fff;
+					transition: transform 0.3s, color 0.3s;
+				}
+				.white:hover {
+					transform: scale(1.1);
+					background-color: #1ae50b;
+					color: #000;
+				}
+			}
+		}
+	}
 }
