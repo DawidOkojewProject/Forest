@@ -8,6 +8,7 @@
 body {
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
+	position: relative;
 }
 .container {
 	margin-top: 0;
@@ -15,6 +16,7 @@ body {
 	top: 0;
 	background-color: #fff;
 	width: 100%;
+	z-index: 10;
 	.phoneNav {
 		display: flex;
 		justify-content: space-between;
@@ -32,7 +34,7 @@ body {
 	height: 100vh;
 	width: 100%;
 	background-color: #31c65e;
-	z-index: 10;
+	z-index: 11;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -158,13 +160,30 @@ h1 {
 
 .offer {
 	padding: 20px 0px;
+	
+	.other-offers{
+		padding: 10px 20px;
+	}
+	a{
+		text-decoration: none;
+		font-weight: bold;
+		text-decoration: underline;
+		transition: transform 0.3s;
+	}
+	.other-offers-link{
+		padding: 5px;
+	}
+	.other-offers-link:hover{
+		transform: scale(1.4);
+	}
 	.cards-box {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		font-size: 0.9rem;
 		.card {
-			// border: 1px solid black;
+			transition: transform 0.3s;
+			
 			width: 300px;
 			height: 400px;
 			border-radius: 10px;
@@ -186,12 +205,12 @@ h1 {
 					font-weight: 600;
 				}
 			}
+			.fa-check {
+				font-size: 0.7rem;
+				color: #1ae50b;
+			}
 			.options {
 				padding-left: 15px;
-				.fa-check {
-					font-size: 0.7rem;
-					color: #1ae50b;
-				}
 			}
 			.divCenter {
 				display: flex;
@@ -207,7 +226,7 @@ h1 {
 				}
 				.white {
 					background-color: #fff;
-					transition: scale 0.3s;
+					transition: transform 0.3s, color 0.3s;
 				}
 				.white:hover {
 					transform: scale(1.1);
@@ -217,14 +236,19 @@ h1 {
 				.green {
 					background-color: #1ae50b;
 					color: #000;
-					transition: scale 0.3s;
+					transition: transform 0.3s, color 0.3s;
 				}
 				.green:hover {
 					transform: scale(1.1);
+					background-color:#28f41a ;
 				}
 			}
 		}
+		.card:hover{
+			transform: scale(1.05);
+		}
 	}
+
 }
 
 .fa-solid {
@@ -240,7 +264,7 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	.footer_section {
-		padding: 15px;
+	
 		h3 {
 			text-align: center;
 			padding: 10px;
@@ -253,8 +277,53 @@ h1 {
 		}
 	}
 }
-
+footer {
+    // position: absolute;
+    bottom: 0;
+    width: 100%;
+	padding: 15px 5px;
+}
 a {
 	text-decoration: none;
 	color: #000;
+}
+.contact{
+	padding: 5px 10px;
+	position: relative;
+}
+
+.contact-form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact-form button {
+    background-color: #31c65e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #1ae50b;
 }

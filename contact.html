@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bd16a73ff7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <title>Forest</title>
+</head>
+
+<body>
+    <div  class="menu">
+        <a class="menu-link" href='#home''>Home</a>
+        <a class="menu-link" href="#about-us">O nas</a>
+        <a class="menu-link" href="#offers">Oferta</a>
+        <a class="menu-link" href="#contact">Kontakt</a>
+</div>
+
+<section class="container">
+    <nav class="phoneNav">
+        <div class="logo"><a href="index.html"><i class="fa-solid fa-tree"></i>
+            <h1>Forest</h1></a>               
+        </div>
+        <div class="burgerBtn"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+</section>
+
+<section class="contact">
+
+    <label for="text"></label>
+</section>
+
+
+<section id="contact" class="contact">
+    <h2>Kontakt</h2>
+    <form id="contact-form" class="contact-form" method="post" action="submit_form.php">
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Wyślij</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <div class="footer_section footer_about_us">
+        <h3>O nas</h3>
+        <ul>
+            <li>Historia</li>
+            <li>Parki</li>
+            <li>Opinie</li>
+        </ul>
+    </div>
+    <div class="footer_section footer_our_company">
+        <h3>Nasza firma</h3>
+        <ul>
+            <li>Praca</li>
+            <li>Kadry</li>
+            <li>Zarząd</li>
+        </ul>
+    </div>
+    <div class="footer_section footer_documents">
+        <h3>Dokumenty</h3>
+        <ul>
+            <li>Wnioski</li>
+            <li>Rezerwacje</li>
+        </ul>
+    </div>
+</footer>
+<script src="dist/js/contact.min.js"></script>
+</body>
+</html>
