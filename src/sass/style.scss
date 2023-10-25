@@ -50,7 +50,7 @@ body {
 	transform: translateX(0);
 }
 
-main {
+.home {
 	padding-top: 20px;
 }
 .img {
@@ -72,6 +72,7 @@ h1 {
 }
 .jungle {
 	background-image: url('/dist/img/jungle-1807476_640.jpg');
+	position: relative;
 }
 .hero-shadow {
 	height: 60vh;
@@ -80,60 +81,56 @@ h1 {
 	z-index: -1;
 }
 .hero-text {
+	position: absolute;
+	top: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	height: 50vh;
-	z-index: 1;
-	padding: 0 10px;
+	margin-left: 20px;
 }
 .white-color {
 	color: #fff;
-
-	// font-size: 1.2rem;
 }
 .hero-text-p {
-	font-size: 0.9rem;
+	font-size: 1.1rem;
 }
 .hero-text-h2 {
 	margin-top: 5px;
 	font-size: 1.4rem;
 }
+
 .about-us {
 	padding: 5px 0;
-
 	.div-about-us {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-	.section-about-us-img {
-		// background-image: url('/dist/img/waters-3095682_640.jpg');
-		// height: 40vh;
-		
-		// width: auto;
-		// background-size: cover;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		img{
-			width: 80%;
-		}
-	}
-	.text-about-us {
-		padding: 10px;
-		text-align: center;
 
-		h3 {
-			font-size: 1.4rem;
-			padding: 10px 0;
+		.section-about-us-img {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				width: 80%;
+			}
 		}
-	}
-	.text-about-us-paragraph {
-		padding: 20px 5px;
+		.text-about-us {
+			padding: 10px;
+			text-align: center;
+
+			h3 {
+				font-size: 1.4rem;
+				padding: 10px 0;
+			}
+			.text-about-us-paragraph {
+				font-size: 0.9rem;
+				padding: 20px 5px;
+			}
+		}
 	}
 }
+
 .title {
 	text-transform: uppercase;
 	text-align: center;
@@ -148,20 +145,26 @@ h1 {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-}
-.adventure-text {
-	height: 50vh;
-	color: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.border {
-	border: 1px solid #fff;
-	width: 80vw;
-	padding: 10px;
-	text-align: center;
-	font-size: 1.2rem;
+	.adventure-text {
+		position: absolute;
+		height: 50vh;
+		width: 100vw;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		top: 0;
+
+		.border {
+			
+			border: 1px solid #fff;
+			padding: 2rem 0;
+			width: 80vw;
+			text-align: center;
+			font-size: 1.2rem;
+		}
+	}
 }
 .center {
 	text-align: center;
@@ -421,8 +424,5 @@ a {
 	}
 }
 
-
-
-@media(min-width:768px){ 
-	
- }
+@media (min-width: 768px) {
+}
