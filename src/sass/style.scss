@@ -167,8 +167,12 @@ h1 {
 	a {
 		text-decoration: none;
 		font-weight: bold;
+		font-size: 1.1rem;
+		color: #000;
 		text-decoration: underline;
 		transition: transform 0.3s;
+		animation: offer 3s infinite;
+		animation-direction: alternate;
 	}
 	.other-offers-link {
 		padding: 5px;
@@ -380,5 +384,34 @@ a {
 				}
 			}
 		}
+	}
+}
+
+
+.map{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	margin-bottom: 30px;
+	h2{
+		padding: 20px;
+		margin-bottom: 10px;
+	}
+	iframe{
+		height: 300px;
+		width: 300px;
+	}
+}
+
+
+
+@keyframes offer {
+	from{
+		font-size: 1.1rem;
+		color: #000;
+	}to{
+		font-size: 1.3rem;
+		color: #31c65e;
 	}
 }
