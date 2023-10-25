@@ -65,7 +65,7 @@ h1 {
 
 .hero-img {
 	position: relative;
-	max-height: 60vh;
+	height: 40vh;
 	width: 100vw;
 	background-size: cover;
 	z-index: -2;
@@ -73,9 +73,10 @@ h1 {
 .jungle {
 	background-image: url('/dist/img/jungle-1807476_640.jpg');
 	position: relative;
+	background-position: center;
 }
 .hero-shadow {
-	height: 60vh;
+	height: 40vh;
 	width: 100vw;
 	background-color: rgba($color: #000000, $alpha: 0.4);
 	z-index: -1;
@@ -86,7 +87,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 50vh;
+	height: 40vh;
 	margin-left: 20px;
 }
 .white-color {
@@ -141,23 +142,21 @@ h1 {
 	background: url('/dist/img/girl-5785590_640.jpg');
 	position: relative;
 	width: 100vw;
-
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
 	.adventure-text {
 		position: absolute;
-		height: 50vh;
+		height: 40vh;
 		width: 100vw;
 		color: #fff;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		
+
 		top: 0;
 
 		.border {
-			
 			border: 1px solid #fff;
 			padding: 2rem 0;
 			width: 80vw;
@@ -350,7 +349,7 @@ a {
 	align-items: center;
 	h2 {
 		padding: 20px;
-		font-size: 2.6rem;
+		font-size: 1.6rem;
 		text-align: center;
 	}
 	.ourOffer {
@@ -362,21 +361,24 @@ a {
 			width: 100%;
 		}
 		.tekst {
+			.ourOfferText {
+				font-size: 0.8rem;
+			}
 			h3 {
 				padding: 10px 0px;
-				font-size: 1.6rem;
+				font-size: 1.1rem;
 				text-align: center;
 			}
 			.chooseSection {
+				margin: 10px;
 				display: flex;
 				justify-content: center;
-
 				flex-direction: column;
 				text-align: center;
+				font-size: 0.8rem;
 
 				.choose {
 					border-radius: 5px;
-
 					padding: 15px 30px;
 					border: none;
 					box-shadow: 2px 2px 7px 1px rgb(163, 163, 163);
@@ -424,5 +426,73 @@ a {
 	}
 }
 
+@media (min-width: 576px) {
+	.hero-img,
+	.hero-shadow,
+	.hero-text {
+		height: 50vh;
+	}
+	.adventure {
+		.adventure-text {
+			height: 50vh;
+		}
+	}
+}
 @media (min-width: 768px) {
+	.hero-img,
+	.hero-shadow,
+	.hero-text {
+		height: 60vh;
+	}
+	.adventure {
+		.adventure-text {
+			height: 60vh;
+		}
+	}
+	.about-us{
+		margin-bottom: 45px;
+		.div-about-us{
+		.section-about-us-img{
+			width: 50%;
+			img{
+				height: 300px;
+				width: auto;
+				padding: 0;
+				margin: 0;
+			}
+		}
+			flex-direction: row;
+			align-items: start;
+		
+			
+			.text-about-us{
+				text-align-last: left;
+				width: 50%;
+				height: 100%;
+				padding: 0;
+				h3{
+					padding: 0;
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.jungle {
+		background-image: url('/dist/img/jungle-1807476_1920.jpg');
+		background-position: center;
+	}
+	.hero-img,
+	.hero-shadow,
+	.hero-text {
+		height: 60vh;
+	}
+	.adventure {
+		background-image: url('/dist/img/girl-5785590_1920.jpg');
+		.adventure-text {
+			height: 60vh;
+		}
+	}
 }
