@@ -1,6 +1,8 @@
 const burgerBtn = document.querySelector('.burgerBtn')
 const menu = document.querySelector('.menu')
 const menuLinks = document.querySelectorAll('.menu-link')
+const footerYear = document.querySelector(".footer__year");
+const closeButton = document.querySelector('.menu__closeButton')
 
 const btn = () => {
 	menu.classList.toggle('active')
@@ -14,7 +16,14 @@ const btn = () => {
 const closeMenu =() =>{
     menu.classList.remove('active')
 }
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear();
+	footerYear.innerText = year;
+};
+
+handleCurrentYear();
 
 
 burgerBtn.addEventListener('click', btn)
 menu.addEventListener('click',closeMenu)
+closeButton.addEventListener('click',closeMenu)

@@ -15,10 +15,13 @@
 <body>
 
     <div class="menu">
-        <a class="menu-link" href='#home''>Home</a>
-            <a class="menu-link" href="#about-us">O nas</a>
-            <a class="menu-link" href="#offers">Oferta</a>
-            <a class="menu-link" href="contact.html">Kontakt</a>
+        <div class="menu__closeButton"><i class="fa-solid fa-x"></i></div>
+         <div class="menu__list">
+                <a class="menu-link" href='#home''>Home</a>
+                <a class="menu-link" href="#about-us">O nas</a>
+                <a class="menu-link" href="#offers">Oferta</a>
+                <a class="menu-link" href="contact.html">Kontakt</a>
+         </div>
     </div>
 
     <section class="container">
@@ -79,7 +82,7 @@
                     <h3 class="center fwnormal">Demo</h3>
                     <p class="price center"><span class="bigger">$</span>0</p>
                     <div class="options">
-                        <p> <i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+                        <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
                         <p><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
                         <p><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
                         <p><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
@@ -138,6 +141,9 @@
                 <li><a  href="#home">Rezerwacje</a></li>
             </ul>
         </div>
+        <p class="footer__bottom-text">
+            &copy; <span class="footer__year"></span> Forest
+        </p>
     </footer>
     <script src="dist/js/main.min.js"></script>
 </body>

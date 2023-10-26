@@ -25,6 +25,8 @@ body {
 		.burgerBtn {
 			z-index: 50;
 			font-size: 2rem;
+			cursor: pointer;
+			padding: 5px;
 		}
 	}
 }
@@ -37,12 +39,26 @@ body {
 	z-index: 11;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+
 	transform: translateX(100%);
-	a {
-		padding: 20px 40px;
-		font-size: 2.8rem;
+	.menu__closeButton {
+		display: flex;
+		justify-content: end;
+		font-size: 2rem;
+		cursor: pointer;
+
+		z-index: 50;
+		padding: 2rem;
+	}
+	.menu__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		a {
+			padding: 20px 40px;
+			font-size: 2.8rem;
+		}
 	}
 }
 
@@ -173,7 +189,7 @@ h1 {
 	padding: 20px 0px;
 
 	.other-offers {
-		padding: 10px 20px;
+		height: 50px;
 	}
 	a {
 		text-decoration: none;
@@ -182,8 +198,13 @@ h1 {
 		color: #000;
 		text-decoration: underline;
 		transition: transform 0.3s;
-		animation: offer 3s infinite;
+		animation: offer 2s infinite;
 		animation-direction: alternate;
+		transition: transform 0.3s;
+		cursor: pointer;
+	}
+	a:hover{
+		transform: scale(1.2rem);
 	}
 	.other-offers-link {
 		padding: 5px;
@@ -198,8 +219,9 @@ h1 {
 		font-size: 0.9rem;
 		.card {
 			transition: transform 0.3s;
+			
 
-			width: 300px;
+			width: 330px;
 			height: 400px;
 			border-radius: 10px;
 			margin: 30px 5px;
@@ -238,10 +260,12 @@ h1 {
 					border: none;
 					box-shadow: 2px 2px 7px 1px rgb(163, 163, 163);
 					color: #726262;
+					
 				}
 				.white {
 					background-color: #fff;
 					transition: transform 0.3s, color 0.3s;
+					cursor: pointer;
 				}
 				.white:hover {
 					transform: scale(1.1);
@@ -252,6 +276,7 @@ h1 {
 					background-color: #1ae50b;
 					color: #000;
 					transition: transform 0.3s, color 0.3s;
+					cursor: pointer;
 				}
 				.green:hover {
 					transform: scale(1.1);
@@ -295,6 +320,10 @@ footer {
 	bottom: 0;
 	width: 100%;
 	padding: 15px 5px;
+	.footer__bottom-text {
+		padding: 5px 0;
+		margin-top: 10px;
+	}
 }
 a {
 	text-decoration: none;
@@ -417,11 +446,9 @@ a {
 
 @keyframes offer {
 	from {
-		font-size: 1.1rem;
 		color: #000;
 	}
 	to {
-		font-size: 1.3rem;
 		color: #31c65e;
 	}
 }
@@ -449,28 +476,27 @@ a {
 			height: 60vh;
 		}
 	}
-	.about-us{
+	.about-us {
 		margin-bottom: 45px;
-		.div-about-us{
-		.section-about-us-img{
-			width: 50%;
-			img{
-				height: 300px;
-				width: auto;
-				padding: 0;
-				margin: 0;
+		.div-about-us {
+			.section-about-us-img {
+				width: 50%;
+				img {
+					height: 300px;
+					width: auto;
+					padding: 0;
+					margin: 0;
+				}
 			}
-		}
 			flex-direction: row;
 			align-items: start;
-		
-			
-			.text-about-us{
+
+			.text-about-us {
 				text-align-last: left;
 				width: 50%;
 				height: 100%;
 				padding: 0;
-				h3{
+				h3 {
 					padding: 0;
 					margin: 0;
 				}
