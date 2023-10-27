@@ -37,6 +37,7 @@ body {
 		}
 		.computerMenu{
 			// padding: 0 10rem;
+			display: none;
 			a{
 				padding: 25px 15px;
 				font-size: 1.3rem;
@@ -48,7 +49,7 @@ body {
 			}
 		}
 		.burgerBtn {
-			display: none;
+			
 			z-index: 50;
 			font-size: 2rem;
 			cursor: pointer;
@@ -522,6 +523,43 @@ a {
 }
 
 @media (min-width: 992px) {
+	.container {
+		margin-top: 0;
+		position: sticky;
+		top: 0;
+		background-color: #fff;
+		width: 100%;
+		z-index: 10;
+		padding: 1rem 4rem;
+		.phoneNav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 10px;
+			
+			.logo{
+				font-size: 1.6rem;
+				color: #000;
+				a{
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					
+				}
+				
+			}
+			.computerMenu{
+				// padding: 0 10rem;
+				display: block;
+
+			}
+			.burgerBtn {
+				display: none;
+			
+				
+			}
+		}
+	}
 	.footer{
 		flex-direction: row;
 		
