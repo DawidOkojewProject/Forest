@@ -40,15 +40,10 @@
 
     </section>
 
-    <section class="contact">
-
-        <label for="text"></label>
-    </section>
-
 
     <section id="contact" class="contact">
         <h1>Kontakt</h1>
-        <form id="contact-form" class="contact-form" method="post" action="submit_form.php">
+        <form id="contact-form" class="contact-form">
             <label for="name">Imię:</label>
             <input type="text" id="name" name="name" required>
 
@@ -56,7 +51,7 @@
             <input type="email" id="email" name="email" required>
 
             <label for="message">Wiadomość:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="message" name="message" rows="6"  required></textarea>
 
             <button type="submit">Wyślij</button>
         </form>
@@ -102,6 +97,8 @@
     <p class="footer__bottom-text">
         &copy; <span class="footer__year"></span> Forest Group Company Ltd
     </p>
+   
+    <script src="dist/js/main.min.js"></script>
     <script src="dist/js/contact.min.js"></script>
 </body>
 

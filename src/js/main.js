@@ -22,9 +22,9 @@ const handleCurrentYear = () => {
 	footerYear.innerText = year;
 };
 
+
+
 handleCurrentYear();
-
-
 burgerBtn.addEventListener('click', btn)
 menu.addEventListener('click',closeMenu)
 closeButton.addEventListener('click',closeMenu)
