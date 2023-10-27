@@ -17,12 +17,38 @@ body {
 	background-color: #fff;
 	width: 100%;
 	z-index: 10;
+	padding: 1rem 4rem;
 	.phoneNav {
 		display: flex;
 		justify-content: space-between;
-		font-size: 2rem;
-		padding: 10px 10px;
+		align-items: center;
+		padding: 0 10px;
+		
+		.logo{
+			font-size: 1.6rem;
+			color: #000;
+			a{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				
+			}
+			
+		}
+		.computerMenu{
+			// padding: 0 10rem;
+			a{
+				padding: 25px 15px;
+				font-size: 1.3rem;
+				color: #333131;
+			}
+			a:hover{
+				color: #fff;
+				background-color: #000;
+			}
+		}
 		.burgerBtn {
+			display: none;
 			z-index: 50;
 			font-size: 2rem;
 			cursor: pointer;
@@ -168,15 +194,16 @@ h1 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
+		font-weight: 600;
 		top: 0;
-
+		
 		.border {
+			
 			border: 1px solid #fff;
 			padding: 2rem 0;
-			width: 80vw;
+			width: 60vw;
 			text-align: center;
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 		}
 	}
 }
@@ -296,11 +323,23 @@ h1 {
 	font-weight: normal;
 }
 .footer {
+	bottom: 0;
+	width: 100%;
+	padding: 15px 5px;
 	background-color: #f9f5f5;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	.footer__logo{
+		display: flex;
+		padding: 10px;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.6rem;
+
+		
+	}
 	.footer_section {
 		h3 {
 			text-align: center;
@@ -314,16 +353,13 @@ h1 {
 		}
 	}
 }
-footer {
-	// position: absolute;
-	bottom: 0;
-	width: 100%;
-	padding: 15px 5px;
-	.footer__bottom-text {
-		padding: 5px 0;
-		margin-top: 10px;
-	}
+.footer__bottom-text {
+	padding: 5px 0;
+	margin-top: 10px;
+	text-align: center;
+	background-color: #f9f5f5;
 }
+
 a {
 	text-decoration: none;
 	color: #000;
@@ -461,6 +497,9 @@ a {
 	.adventure {
 		.adventure-text {
 			height: 50vh;
+			.border{
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
@@ -474,6 +513,35 @@ a {
 	.adventure {
 		.adventure-text {
 			height: 60vh;
+			.border{
+				font-size: 1.7rem;
+			}
+		}
+	}
+
+}
+
+@media (min-width: 992px) {
+	.footer{
+		flex-direction: row;
+		
+		padding: 2rem;
+		.footer__logo{
+			width: 50%;
+			font-size: 2rem;
+		}
+		.footer__text--container{
+			width: 50%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			.footer_section{
+				padding: 10px;
+				text-align-last: left;
+				ul{
+					padding: 5px;
+				}
+			}
 		}
 	}
 	.about-us {
@@ -490,7 +558,7 @@ a {
 			}
 			flex-direction: row;
 			align-items: start;
-
+	
 			.text-about-us {
 				text-align-last: left;
 				width: 50%;
@@ -503,9 +571,6 @@ a {
 			}
 		}
 	}
-}
-
-@media (min-width: 992px) {
 	.ourOffer{
 		display: flex;
 		flex-direction: row;
@@ -540,6 +605,9 @@ a {
 		background-image: url('/dist/img/girl-5785590_1920.jpg');
 		.adventure-text {
 			height: 60vh;
+			.border{
+				font-size: 2rem;
+			}
 		}
 	}
 }
