@@ -4,6 +4,7 @@ const menuLinks = document.querySelectorAll('.menu-link')
 const footerYear = document.querySelector(".footer__year");
 const closeButton = document.querySelector('.menu__closeButton')
 
+
 const btn = () => {
 	menu.classList.toggle('active')
 
