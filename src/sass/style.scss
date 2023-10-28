@@ -497,6 +497,12 @@ a {
 }
 
 @media (min-width: 576px) {
+	.map {
+		iframe {
+			height: 400px;
+			width: 450px;
+		}
+	}
 	.hero-img,
 	.hero-shadow,
 	.hero-text {
@@ -512,6 +518,12 @@ a {
 	}
 }
 @media (min-width: 768px) {
+	.map {
+		iframe {
+			height: 600px;
+			width: 650px;
+		}
+	}
 	.hero-img,
 	.hero-shadow,
 	.hero-text {
@@ -528,6 +540,12 @@ a {
 }
 
 @media (min-width: 992px) {
+	.map {
+		iframe {
+			height: 800px;
+			width: 850px;
+		}
+	}
 	.container {
 		margin-top: 0;
 		position: sticky;
