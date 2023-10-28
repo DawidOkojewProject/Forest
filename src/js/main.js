@@ -1,9 +1,24 @@
+
+
 const burgerBtn = document.querySelector('.burgerBtn')
 const menu = document.querySelector('.menu')
 const menuLinks = document.querySelectorAll('.menu-link')
-const footerYear = document.querySelector(".footer__year");
+const footerYear = document.querySelector('.footer__year')
 const closeButton = document.querySelector('.menu__closeButton')
 
+
+// scroll spy
+
+let section = document.querySelectorAll('section')
+let navLinks = document.querySelectorAll('header nav  a')
+
+
+
+  
+  
+  
+  
+///end of scroll spy
 
 const btn = () => {
 	menu.classList.toggle('active')
@@ -14,17 +29,15 @@ const btn = () => {
 		})
 	})
 }
-const closeMenu =() =>{
-    menu.classList.remove('active')
+const closeMenu = () => {
+	menu.classList.remove('active')
 }
 const handleCurrentYear = () => {
-	const year = new Date().getFullYear();
-	footerYear.innerText = year;
-};
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
 
-
-
-handleCurrentYear();
+handleCurrentYear()
 burgerBtn.addEventListener('click', btn)
-menu.addEventListener('click',closeMenu)
-closeButton.addEventListener('click',closeMenu)
+menu.addEventListener('click', closeMenu)
+closeButton.addEventListener('click', closeMenu)

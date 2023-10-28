@@ -41,7 +41,7 @@ body {
 				font-size: 1.3rem;
 				color: #333131;
 			}
-			a:hover {
+			.active, a:hover {
 				color: #fff;
 				background-color: #000;
 			}
@@ -305,11 +305,13 @@ h1 {
 				}
 			}
 		}
+		
 		.card:hover {
 			transform: scale(1.05);
 		}
 	}
 }
+
 
 .fa-solid {
 	padding: 7px;
@@ -343,7 +345,7 @@ h1 {
 			list-style: none;
 			text-align: center;
 			font-size: 0.8rem;
-			a:hover{
+			a:hover {
 				color: #1ae50b;
 				font-weight: 700;
 			}
@@ -366,10 +368,10 @@ a {
 .contact {
 	padding: 15px 60px;
 	position: relative;
-	h1{
+	h1 {
 		padding: 10px 20px;
 	}
-	textarea{
+	textarea {
 		resize: vertical;
 	}
 }
@@ -453,6 +455,7 @@ a {
 					box-shadow: 2px 2px 7px 1px rgb(163, 163, 163);
 					color: #726262;
 					margin: 10px;
+					cursor: pointer;
 				}
 				.white {
 					background-color: #fff;
@@ -583,13 +586,7 @@ a {
 			}
 		}
 	}
-	.ourOffer {
-		display: flex;
-		flex-direction: row;
-		img {
-			width: 50%;
-		}
-	}
+
 	.offer {
 		justify-content: center;
 		align-items: center;
@@ -617,6 +614,29 @@ a {
 			height: 60vh;
 			.border {
 				font-size: 2rem;
+			}
+		}
+	}
+	#ourOffers {
+		.ourOffer {
+			flex-direction: row;
+			
+			.left,
+			.right {
+				width: 50%;
+				padding: 5px;
+				font-size: 1.4rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			
+				
+				.chooseSection{
+					font-weight: bold;
+					padding-top: 3rem;
+					bottom: 0;
+				
+				}
 			}
 		}
 	}
