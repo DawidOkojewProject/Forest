@@ -113,7 +113,6 @@ h1 {
 	background-image: url('../../dist/img/jungle-1807476_640.jpg');
 	position: relative;
 	background-position: center;
-	
 }
 .hero-shadow {
 	height: 40vh;
@@ -223,7 +222,7 @@ h1 {
 		color: #000;
 		text-decoration: underline;
 		transition: transform 0.3s;
-		animation: offer 2s infinite;
+		animation: offer 1s infinite;
 		animation-direction: alternate;
 		transition: transform 0.3s;
 		cursor: pointer;
