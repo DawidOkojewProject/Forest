@@ -7,10 +7,6 @@ const footerYear = document.querySelector('.footer__year')
 const closeButton = document.querySelector('.menu__closeButton')
 
 
-// scroll spy
-
-let section = document.querySelectorAll('section')
-let navLinks = document.querySelectorAll('header nav  a')
 
 
 
