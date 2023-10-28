@@ -110,7 +110,7 @@ h1 {
 	z-index: -2;
 }
 .jungle {
-	background-image: url('/dist/img/jungle-1807476_640.jpg');
+	background-image: url('..dist/img/jungle-1807476_640.jpg');
 	position: relative;
 	background-position: center;
 }
@@ -178,7 +178,7 @@ h1 {
 }
 
 .adventure {
-	background: url('/dist/img/girl-5785590_640.jpg');
+	background: url('..dist/img/girl-5785590_640.jpg');
 	position: relative;
 	width: 100vw;
 	background-position: center;
@@ -617,7 +617,7 @@ a {
 		}
 	}
 	.jungle {
-		background-image: url('/dist/img/jungle-1807476_1920.jpg');
+		background-image: url('..dist/img/jungle-1807476_1920.jpg');
 		background-position: center;
 	}
 	.hero-img,
@@ -626,7 +626,7 @@ a {
 		height: 60vh;
 	}
 	.adventure {
-		background-image: url('/dist/img/girl-5785590_1920.jpg');
+		background-image: url('..dist/img/girl-5785590_1920.jpg');
 		.adventure-text {
 			height: 60vh;
 			.border {
